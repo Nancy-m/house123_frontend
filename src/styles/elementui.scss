@@ -1,0 +1,13 @@
+// form
+.el-form--inline {
+  .el-form-item {
+      margin-bottom: 10px;
+      font-size: 12px;
+  }
+  .el-checkbox {
+      margin-left: 5px;
+      .el-checkbox__label {
+          padding-left: 5px;
+      }
+  }
+}

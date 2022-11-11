@@ -1,0 +1,46 @@
+// size
+
+$header-height: 65px;
+
+// 字体-text
+$fontSize-p: 14px; // main-base
+
+$fontSize-12: 12px; // 辅助文字
+$fontSize-14: 14px; // 正文
+$fontSize-16: 16px; // 小标题
+$fontSize-18: 18px; // 标题
+$fontSize-20: 20px; // 主标题
+
+// border-radius 2px = 1base;
+$border-radius-p: 2px;
+
+$border-radius-xs: 2px;
+$border-radius-s: 4px;
+$border-radius-l: 8px;
+$border-radius-xl: 16px;
+$border-radius-50p: 50%;
+
+// border-size 1px = base
+$border-size-p: 1px;
+
+$border-size-xs: 1px;
+$border-size-s: 2px;
+$border-size-m: 4px;
+$border-size-l: 8px;
+
+// space size  8px = base
+$space-p: 8px;
+
+$space-xs: 4px;
+$space-s: 8px;
+$space-md: 16px;
+$space-l: 24px;
+$space-xl: 40px;
+$space-xxl: 48px;
+
+
+
+// in js use
+:export {
+
+}

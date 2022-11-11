@@ -1,0 +1,155 @@
+@import './color.scss';
+@import './size.scss';
+@import './mixin.scss';
+
+// 格式化form样式
+@mixin formatForm(){
+    // 格式化其中的input框输入样式
+    .el-form--label-top .el-form-item__label {
+      padding: 0;
+    }
+    .el-form-item {
+      margin-bottom: 4px;
+    }
+    // label样式---上下结构
+    .el-form-item__label {
+      color: $Sys-0-3;
+      font-size: $fontSize-12;
+    }
+    // 必填设置
+    .el-form-item {
+      &.is-required {
+        .el-form-item__label {
+          &::before {
+            content: '';
+          }
+          &::after {
+            content: "*";
+            color: $red-600;
+            font-weight: 500;
+            margin-left: $space-p;
+          }
+        }
+      }
+    }
+    // 输入框样式
+    .el-input__inner,
+    .el-textarea__inner,
+    .el-date-editor
+    .el-range-input{
+      background-color: $bg-2;
+      color: $text-0-4;
+      font-size: $fontSize-14;
+    }
+    // counter
+    .el-input__count-inner {
+      background-color: $bg-2;
+    }
+    .el-textarea .el-input__count{
+      background-color: $bg-2;
+    }
+    // cascader
+    .el-cascader__search-input{
+      background-color: $bg-2;
+    }
+    .el-cascader__tags .el-tag{
+      background-color: #fff;
+    }
+    // 错误设置
+    .is-error {
+      .el-input__inner,
+      .el-textarea__inner {
+        border: 1px solid $red-600;
+      }
+      .el-form-item__error {
+        position: relative;
+        color: $red-600;
+        font-size: $fontSize-12;
+      }
+    }
+  // 文本框disabled
+  .el-input.is-disabled .el-input__inner{
+    background: #fff;
+    color: $text-0-1;
+  }
+
+}
+
+// 根据UI样式格式化dialog
+@mixin formatDialog() {
+  /deep/ .el-dialog {
+    border-radius: $border-radius-s;
+    .el-dialog__header,
+    .el-dialog__footer {
+      padding: $space-md;
+      border-bottom: 1px solid $border-2;
+    }
+      // header
+      .el-dialog__title,
+      .el-dialog__headerbtn .el-dialog__close {
+        font-size: $fontSize-14;
+        color: $text-0-4;
+        font-weight: 500;
+      }
+      .el-dialog__headerbtn .el-dialog__close {
+        font-size: $fontSize-16;
+      }
+
+    // dialog底部按钮设置为mini大小
+    .el-dialog__footer .el-button {
+      font-size: $fontSize-12;
+      padding: 9px 15px;
+    }
+
+    .el-dialog__body {
+      padding: $space-md;
+      max-height: 557px;
+      overflow-y: auto;
+      @include scrollBar();
+      // 格式化form内容
+      @include formatForm();
+    }
+  }
+}
+
+// 强制label-position="top"
+@mixin labelPositionTop() {
+  .el-form-item__content {
+    margin-left: 0 !important;
+  }
+  .el-form-item__label{
+    width: auto !important;
+  }
+}
+
+// 格式化表格样式
+@mixin formatTable() {
+  font-size: $fontSize-14;
+  color: $text-0-3;
+  margin: $space-md 0;
+  thead {
+    color:$text-0-2;
+    font-weight: 500;
+    tr,
+    th {
+      background-color: $bg-2;
+    }
+  }
+  .el-button.el-button--text{
+    padding: 0
+  }
+}
+.el-table{
+  @include formatTable();
+}
+
+.el-select-dropdown__item.selected{
+  color: $primary-400;
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+  background-color: $primary-50
+}
+
+.el-cascader-panel {
+  max-height: 268px;
+}

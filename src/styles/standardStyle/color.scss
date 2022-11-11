@@ -1,0 +1,114 @@
+// primary 固定品牌色,buttom,icon
+
+// 应用主色建议为400， 如果强调主色700，弱化 200
+$primary-50: rgba(225,241,254,1);
+$primary-100: rgba(183,220,253,1);
+$primary-200: rgba(135,199,252,1);
+$primary-300: rgba(82,177,251,1);
+$primary-400: rgba(24,160,251,1);// main
+$primary-500: rgba(0,144,250,1);
+$primary-600: rgba(0,130,236,1);
+$primary-700: rgba(0,112,216,1);
+$primary-800: rgba(0,95,199,1);
+$primary-900: rgba(0,65,166,1);
+// accent 主色 A200
+$primary-A100: rgba(129,219,255,1);
+$primary-A200: rgba(67,203,255,1); // main
+$primary-A400: rgba(17,187,255,1);
+$primary-A700: rgba(24,160,251,1);
+
+
+// green 传统意义上表达积极情绪， 主色是500，
+$green-50: rgba(227,246,238,1);
+$green-100: rgba(187,232,214,1);
+$green-200: rgba(141,217,188,1);
+$green-300: rgba(86,203,162,1);
+$green-400: rgba(18,191,142,1);
+$green-500: rgba(0,179,122,1); // main
+$green-600: rgba(0,164,110,1);
+$green-700: rgba(0,146,96,1);
+$green-800: rgba(0,128,83,1);
+$green-900: rgba(0,96,60,1);
+// accent
+$green-A100: rgba(176,254,221,1);
+$green-A200: rgba(141,217,188,1);// main
+$green-A400: rgba(77,231,154,1);
+$green-A700: rgba(18,191,142,1);
+
+
+// yellow 警示作用， 主色是400，
+$yellow-50: rgba(255,253,229,1);
+$yellow-100: rgba(255,250,191,1);
+$yellow-200: rgba(254,246,148,1);
+$yellow-300: rgba(253,241,102,1);
+$yellow-400: rgba(251,237,60,1); // main
+$yellow-500: rgba(255,238,0,1);
+$yellow-600: rgba(255,218,0,1);
+$yellow-700: rgba(255,193,0,1);
+$yellow-800: rgba(255,168,0,1);
+$yellow-900: rgba(255,123,0,1);
+// accent
+$yellow-A100: rgba(253,255,142,1); // main
+$yellow-A200: rgba(249,254,0,1);
+$yellow-A400: rgba(255,238,0,1);
+$yellow-A700: rgba(255,219,0,1);
+
+
+// red 错误阻断， 主色是600，
+$red-50: rgba(250,232,231,1);
+$red-100: rgba(254,202,188,1);
+$red-200: rgba(254,168,145,1);
+$red-300: rgba(253,133,102,1);
+$red-400: rgba(253,105,69,1);
+$red-500: rgba(253,78,38,1);
+$red-600: rgba(242,72,34,1); // main
+$red-700: rgba(228,65,29,1);
+$red-800: rgba(214,58,25,1);
+$red-900: rgba(189,45,16,1);
+// accent
+$red-A100: rgba(251,159,133,1);
+$red-A200: rgba(247,113,76,1); // main
+$red-A400: rgba(242,72,34,1);
+$red-A700: rgba(204,60,32,1 );
+
+
+// text color
+// to black
+$text-0-1: rgba(191,191,191,1); // 占位文字
+$text-0-2: rgba(140,140,140,1); // 次要文字
+$text-0-3: rgba(67,67,67,1); // 常规文字
+$text-0-4: rgba(20,20,20,1); // 主要文字
+$text-0-5: rgba(0,0,0,1); // 纯黑文字
+//to white
+$text-1-1: rgba(255,255,255,0.25);
+$text-1-2: rgba(255,255,255,0.45);
+$text-1-3: rgba(255,255,255,0.65);
+$text-1-4: rgba(255,255,255,0.85);
+$text-1-5: rgba(255,255,255,1);
+
+
+// system color
+// black
+$Sys-0-2: rgba(16, 19, 20, 0.2);
+$Sys-0-3:rgba(16, 19, 20, 0.302);
+$Sys-0-5: rgba(16, 19, 20, 0.549);
+$Sys-0-8: rgba(16, 19, 20, 0.8);
+$Sys-0-10: rgba(16, 19, 20, 1);
+// white
+$Sys-1-4: rgba(255, 255, 255, 0.4);
+$Sys-1-8: rgba(255, 255, 255, 0.8);
+$Sys-1-10: rgba(255, 255, 255, 1);
+// border
+$border-1: rgba(240, 240, 240, 1);
+$border-2: rgba(218, 218, 218, 1);
+// background
+$bg-1: rgba(255, 255, 255, 1);
+$bg-2: rgba(247, 247, 247, 1);
+$bg-3: rgba(240, 242, 245, 1);
+$bg-4: rgba(16, 19, 20, 1);
+
+
+// in js use
+:export {
+
+}

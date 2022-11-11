@@ -1,0 +1,109 @@
+@import './color.scss';
+@import './size.scss';
+
+@mixin flex($justify-content: center, $align-items: center,$flex-direction:row ) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: $border-1 !important;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $border-2 !important;
+    border-radius: 20px !important;
+  }
+}
+// 超多...
+@mixin ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@mixin relative($width:100%, $height:100%) {
+  position: relative;
+  width: $width;
+  height: $height;
+}
+
+@mixin positionCenter($position: absolute) {
+  position: $position;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+@mixin positionLeft($position: absolute, $left: $common-wd) {
+  position: $position;
+  top: 50%;
+  left: $left;
+  transform: translate3d(0, -50%, 0);
+}
+
+@mixin positionRight($position: absolute, $right: $common-wd) {
+  position: $position;
+  top: 50%;
+  right: $right;
+  transform: translate3d(0, -50%, 0);
+}
+
+@mixin font($font-size, $color: #333, $text-align:left, $font-weight:400) {
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+  font-size: $font-size;
+  color: $color;
+  font-weight: $font-weight;
+  text-align: $text-align;
+}
+
+@mixin wh($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin lineH($h: 50px) {
+  height: $h;
+  line-height: $h;
+}
+
+@mixin border($color: #ddd, $radius: 6px, $width: 1px, $type: solid) {
+  border-radius: $radius;
+  border: $width $type $color;
+}
+@mixin menuIcon {
+  width: $menuIconSize;
+  height: $menuIconSize;
+}
+
+// 小标题
+.little-title {
+  color:$text-0-3;
+  font-size: $fontSize-14;
+  margin: 0;
+}
+// 分割线
+.split-line {
+  background-color: $border-1;
+  background: $border-1;
+  margin: $space-md 0;
+  height: 1px;
+  border:none;
+}
+// 红色文字按钮
+.dangerTxt{
+  color: $red-600;
+}
